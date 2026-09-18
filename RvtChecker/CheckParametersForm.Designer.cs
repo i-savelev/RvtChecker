@@ -137,9 +137,9 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.dataGridView1);
             this.groupBox1.Controls.Add(this.panel2);
             this.groupBox1.Controls.Add(this.panel1);
-            this.groupBox1.Controls.Add(this.dataGridView1);
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
@@ -178,8 +178,8 @@
             // groupBox2
             // 
             resources.ApplyResources(this.groupBox2, "groupBox2");
-            this.groupBox2.Controls.Add(this.panel3);
             this.groupBox2.Controls.Add(this.dataGridView2);
+            this.groupBox2.Controls.Add(this.panel3);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
             // 
@@ -305,9 +305,9 @@
             // groupBox5
             // 
             resources.ApplyResources(this.groupBox5, "groupBox5");
+            this.groupBox5.Controls.Add(this.dataGridView4);
             this.groupBox5.Controls.Add(this.panel5);
             this.groupBox5.Controls.Add(this.panel4);
-            this.groupBox5.Controls.Add(this.dataGridView4);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.TabStop = false;
             // 

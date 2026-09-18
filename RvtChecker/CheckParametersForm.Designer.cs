@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CheckParametersForm));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button7 = new System.Windows.Forms.Button();
@@ -40,11 +39,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button3 = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.button6 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
@@ -55,6 +50,17 @@
             this.button13 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPageSettings = new System.Windows.Forms.TabPage();
+            this.tabPageResults = new System.Windows.Forms.TabPage();
+            this.dataGridViewResults = new System.Windows.Forms.DataGridView();
+            this.buttonSaveExcel = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -64,6 +70,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
+            this.tabControl1.SuspendLayout();
+            this.tabPageSettings.SuspendLayout();
+            this.tabPageResults.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewResults)).BeginInit();
+            this.groupBox6.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -78,12 +89,6 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             // 
-            // button1
-            // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // dataGridView2
             // 
             this.dataGridView2.AllowUserToAddRows = false;
@@ -97,9 +102,10 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(this.button7);
-            this.groupBox1.Controls.Add(this.dataGridView1);
             this.groupBox1.Controls.Add(this.button8);
+            this.groupBox1.Controls.Add(this.dataGridView1);
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
@@ -118,10 +124,10 @@
             // 
             // groupBox2
             // 
+            resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Controls.Add(this.button4);
             this.groupBox2.Controls.Add(this.button2);
             this.groupBox2.Controls.Add(this.dataGridView2);
-            resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
             // 
@@ -139,10 +145,9 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.comboBox1);
-            this.groupBox3.Controls.Add(this.groupBox2);
-            this.groupBox3.Controls.Add(this.groupBox1);
             resources.ApplyResources(this.groupBox3, "groupBox3");
+            this.groupBox3.Controls.Add(this.groupBox1);
+            this.groupBox3.Controls.Add(this.groupBox2);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.TabStop = false;
             // 
@@ -152,42 +157,14 @@
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Name = "comboBox1";
             // 
-            // button3
-            // 
-            resources.ApplyResources(this.button3, "button3");
-            this.button3.Name = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
             // groupBox4
             // 
-            this.groupBox4.BackColor = System.Drawing.SystemColors.Control;
-            this.groupBox4.Controls.Add(this.button12);
-            this.groupBox4.Controls.Add(this.button3);
-            this.groupBox4.Controls.Add(this.button10);
-            this.groupBox4.Controls.Add(this.button5);
-            this.groupBox4.Controls.Add(this.button1);
-            this.groupBox4.Controls.Add(this.dataGridView3);
             resources.ApplyResources(this.groupBox4, "groupBox4");
+            this.groupBox4.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBox4.Controls.Add(this.dataGridView3);
+            this.groupBox4.Controls.Add(this.groupBox6);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.TabStop = false;
-            // 
-            // button12
-            // 
-            resources.ApplyResources(this.button12, "button12");
-            this.button12.Name = "button12";
-            this.button12.UseVisualStyleBackColor = true;
-            // 
-            // button10
-            // 
-            resources.ApplyResources(this.button10, "button10");
-            this.button10.Name = "button10";
-            this.button10.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            resources.ApplyResources(this.button5, "button5");
-            this.button5.Name = "button5";
-            this.button5.UseVisualStyleBackColor = true;
             // 
             // dataGridView3
             // 
@@ -233,10 +210,13 @@
             // 
             // groupBox5
             // 
+            resources.ApplyResources(this.groupBox5, "groupBox5");
             this.groupBox5.Controls.Add(this.button13);
+            this.groupBox5.Controls.Add(this.button11);
             this.groupBox5.Controls.Add(this.button15);
             this.groupBox5.Controls.Add(this.dataGridView4);
-            resources.ApplyResources(this.groupBox5, "groupBox5");
+            this.groupBox5.Controls.Add(this.button9);
+            this.groupBox5.Controls.Add(this.button6);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.TabStop = false;
             // 
@@ -263,19 +243,99 @@
             this.dataGridView4.RowTemplate.Height = 24;
             this.dataGridView4.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             // 
-            // SetWorksetsForm
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPageSettings);
+            this.tabControl1.Controls.Add(this.tabPageResults);
+            resources.ApplyResources(this.tabControl1, "tabControl1");
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            // 
+            // tabPageSettings
+            // 
+            this.tabPageSettings.Controls.Add(this.groupBox5);
+            this.tabPageSettings.Controls.Add(this.groupBox3);
+            this.tabPageSettings.Controls.Add(this.groupBox4);
+            resources.ApplyResources(this.tabPageSettings, "tabPageSettings");
+            this.tabPageSettings.Name = "tabPageSettings";
+            this.tabPageSettings.UseVisualStyleBackColor = true;
+            // 
+            // tabPageResults
+            // 
+            this.tabPageResults.Controls.Add(this.dataGridViewResults);
+            this.tabPageResults.Controls.Add(this.buttonSaveExcel);
+            resources.ApplyResources(this.tabPageResults, "tabPageResults");
+            this.tabPageResults.Name = "tabPageResults";
+            this.tabPageResults.UseVisualStyleBackColor = true;
+            // 
+            // dataGridViewResults
+            // 
+            this.dataGridViewResults.AllowUserToAddRows = false;
+            this.dataGridViewResults.AllowUserToDeleteRows = false;
+            this.dataGridViewResults.AllowUserToResizeRows = false;
+            this.dataGridViewResults.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewResults.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            resources.ApplyResources(this.dataGridViewResults, "dataGridViewResults");
+            this.dataGridViewResults.Name = "dataGridViewResults";
+            this.dataGridViewResults.ReadOnly = true;
+            this.dataGridViewResults.RowTemplate.Height = 24;
+            this.dataGridViewResults.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            // 
+            // buttonSaveExcel
+            // 
+            resources.ApplyResources(this.buttonSaveExcel, "buttonSaveExcel");
+            this.buttonSaveExcel.Name = "buttonSaveExcel";
+            this.buttonSaveExcel.UseVisualStyleBackColor = true;
+            // 
+            // button12
+            // 
+            resources.ApplyResources(this.button12, "button12");
+            this.button12.Name = "button12";
+            this.button12.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            resources.ApplyResources(this.button3, "button3");
+            this.button3.Name = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button10
+            // 
+            resources.ApplyResources(this.button10, "button10");
+            this.button10.Name = "button10";
+            this.button10.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            resources.ApplyResources(this.button5, "button5");
+            this.button5.Name = "button5";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // groupBox6
+            // 
+            resources.ApplyResources(this.groupBox6, "groupBox6");
+            this.groupBox6.Controls.Add(this.button3);
+            this.groupBox6.Controls.Add(this.button12);
+            this.groupBox6.Controls.Add(this.button10);
+            this.groupBox6.Controls.Add(this.button1);
+            this.groupBox6.Controls.Add(this.button5);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.TabStop = false;
+            // 
+            // CheckParametersForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.progressBar1);
-            this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button11);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.groupBox4);
-            this.Controls.Add(this.groupBox3);
-            this.Name = "SetWorksetsForm";
+            this.Name = "CheckParametersForm";
             this.ShowIcon = false;
             this.TopMost = true;
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -283,18 +343,26 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.groupBox5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
+            this.tabControl1.ResumeLayout(false);
+            this.tabPageSettings.ResumeLayout(false);
+            this.tabPageSettings.PerformLayout();
+            this.tabPageResults.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewResults)).EndInit();
+            this.groupBox6.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
+
         public System.Windows.Forms.DataGridView dataGridView1;
-        public System.Windows.Forms.Button button1;
         public System.Windows.Forms.DataGridView dataGridView2;
         public System.Windows.Forms.GroupBox groupBox1;
         public System.Windows.Forms.GroupBox groupBox2;
@@ -302,22 +370,29 @@
         public System.Windows.Forms.GroupBox groupBox3;
         public System.Windows.Forms.GroupBox groupBox4;
         public System.Windows.Forms.DataGridView dataGridView3;
-        public System.Windows.Forms.Button button3;
         public System.Windows.Forms.Button button4;
-        public System.Windows.Forms.Button button5;
         public System.Windows.Forms.Button button6;
         public System.Windows.Forms.Button button8;
         public System.Windows.Forms.Button button7;
         public System.Windows.Forms.Button button9;
-        public System.Windows.Forms.Button button10;
         public System.Windows.Forms.Button button11;
         public System.Windows.Forms.TextBox textBox1;
         public System.Windows.Forms.ComboBox comboBox1;
         public System.Windows.Forms.ProgressBar progressBar1;
-        public System.Windows.Forms.Button button12;
         public System.Windows.Forms.GroupBox groupBox5;
         public System.Windows.Forms.Button button13;
         public System.Windows.Forms.Button button15;
         public System.Windows.Forms.DataGridView dataGridView4;
+        public System.Windows.Forms.TabControl tabControl1;
+        public System.Windows.Forms.TabPage tabPageSettings;
+        public System.Windows.Forms.TabPage tabPageResults;
+        public System.Windows.Forms.DataGridView dataGridViewResults;
+        public System.Windows.Forms.Button buttonSaveExcel;
+        public System.Windows.Forms.Button button12;
+        public System.Windows.Forms.Button button3;
+        public System.Windows.Forms.Button button10;
+        public System.Windows.Forms.Button button5;
+        public System.Windows.Forms.Button button1;
+        private System.Windows.Forms.GroupBox groupBox6;
     }
 }
